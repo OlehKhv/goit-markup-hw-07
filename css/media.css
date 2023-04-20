@@ -1,0 +1,14 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+  .cards-list-item {
+    flex-basis: 264px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}
