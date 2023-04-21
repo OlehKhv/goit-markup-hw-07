@@ -15,6 +15,7 @@
 
 ul,
 ol,
+li,
 button {
   padding: 0;
   background-color: transparent;
@@ -122,11 +123,9 @@ ol {
 }
 
 .section-text {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* color: var(--text-color, #434455); */
 }
 
 /* Header */
@@ -142,7 +141,6 @@ ol {
 
 .header > .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -173,70 +171,11 @@ ol {
 
 .header-nav {
   display: none;
-  /* display: flex;
-  margin-right: auto;
-  align-items: center; */
 }
-
-/* .nav-list {
-  display: flex;
-}
-
-.nav-link {
-  display: block;
-  position: relative;
-  color: var(--main-color, #2e2f42);
-  height: 100%;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  transition: color var(--anim-time);
-}
-
-
-
-.nav-link:is(:hover, :focus),
-.contact-link:is(:hover, :focus) {
-  color: var(--active-color, #404bbf);
-}
-
-.nav-link.current {
-  color: var(--active-color, #404bbf);
-}
-
-.nav-link.current::after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-
-  height: 4px;
-  background: var(--active-color, #404bbf);
-  border-radius: 2px;
-} */
 
 .contacts {
   display: none;
-  /* font-style: normal; */
 }
-
-/* .contacts-list {
-  display: flex;
-  gap: 40px;
-}
-
-.contact-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.contact-link {
-  transition: color var(--anim-time);
-} */
 
 /* Main */
 /* Hero */
@@ -266,20 +205,13 @@ ol {
 }
 
 .hero-title {
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: var(--main-hero-color, #ffffff);
   letter-spacing: 0.02em;
-  text-transform: capitalize;
-
-  /* color: var(--main-hero-color, #ffffff);
-
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em; */
 }
 
 .hero-btn {
@@ -307,48 +239,17 @@ ol {
   display: flex;
   flex-direction: column;
   gap: var(--mob-gap, 72px);
-  /* gap: var(--main-gap, 24px); */
 }
-
-/* .features-list-item {
-  flex-basis: calc((100% - 72px) / 4);
-} */
 
 .icon-bg {
   display: none;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  background-color: var(--accent-color, #f4f4fd);
-  border-radius: 4px;
-
-  margin-bottom: 8px; */
-}
-
-.features-list-item > .section-subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 /* Direction */
 
 .direction {
   display: none;
-  padding-top: 0;
 }
-
-/* .direction-list {
-  display: flex;
-  gap: var(--main-gap, 24px);
-}
-
-.direction-list > li {
-  width: calc((100% - 48px) / 3);
-} */
 
 /* Card of team */
 
@@ -361,10 +262,10 @@ ol {
   flex-direction: column;
   align-items: center;
   gap: var(--mob-gap, 72px);
-  /* gap: var(--main-gap, 24px); */
 }
 
 .cards-list-item {
+  flex-basis: 264px;
   background-color: var(--main-bg-color, #ffffff);
   text-align: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -409,7 +310,6 @@ ol {
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--mob-gap, 72px) 16px;
-  /* gap: var(--main-gap, 24px); */
 }
 
 .customers-list-item > a {
@@ -549,11 +449,9 @@ ol {
 }
 
 .footer-text {
-  width: 268px;
+  max-width: 268px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* margin-right: 120px; */
 }
 
 .footer-text > .logo {
@@ -565,7 +463,6 @@ ol {
 }
 
 .footer-text > .section-text {
-  font-weight: 400;
   color: var(--accent-color, #f4f4fd);
 }
 
@@ -574,7 +471,6 @@ ol {
 }
 
 .footer-social > .section-text {
-  text-align: center;
   color: var(--main-hero-color, #ffffff);
   margin-bottom: 16px;
 }
@@ -588,21 +484,24 @@ ol {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
   width: 100%;
 }
 
 .subscribe > .section-text {
-  /* text-align: center; */
+  margin-bottom: 16px;
   color: var(--main-hero-color, #ffffff);
-  /* margin-bottom: 16px; */
+}
+
+.subscribe-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .subscribe label {
   width: 100%;
+  height: 40px;
 }
 
 .subscribe input {
@@ -673,10 +572,10 @@ ol {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim-time);
 
-  width: 408px;
+  width: 392px;
   min-height: 576px;
   background-color: #fcfcfc;
-  padding: 24px;
+  padding: 24px 16px;
 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
