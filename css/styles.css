@@ -159,7 +159,7 @@ ol {
   color: var(--main-color, #2e2f42);
 }
 
-.menu-btn {
+.open-menu-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,6 +175,107 @@ ol {
 
 .contacts {
   display: none;
+}
+
+/* Mobile Menu */
+
+.mob-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 24px 40px 40px;
+  background-color: var(--main-bg-color, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.menu-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 32px;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  fill: var(--main-color, #2e2f42);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--border-color, #e7e9fc);
+
+  transition: background-color var(--anim-time), border-color var(--anim-time),
+    fill var(--anim-time);
+}
+
+.menu-close-btn:is(:hover, :focus) {
+  background-color: var(--active-color, #404bbf);
+  fill: var(--main-hero-color, #ffffff);
+  border-color: transparent;
+}
+
+.menu-nav {
+  margin-bottom: var(--mob-gap, 72px);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  font-weight: 700;
+  transition: color var(--anim-time);
+}
+
+.nav-link:is(:hover, :focus),
+.contacts-link:is(:hover, :focus) {
+  color: var(--active-color, #404bbf);
+}
+
+.nav-link.current {
+  color: var(--active-color, #404bbf);
+}
+
+.menu-contacts {
+  font-style: normal;
+  margin-bottom: 48px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contacts-link.section-title {
+  font-weight: 700;
+  color: var(--logo-color, #4d5ae5);
+}
+
+.contacts-link.section-subtitle {
+  margin-bottom: 0px;
+  color: var(--text-color, #434455);
+  transition: color var(--anim-time);
+}
+
+.contacts-link.section-subtitle:is(:hover, :focus) {
+  color: var(--active-color, #404bbf);
+}
+
+.mob-menu .social-list {
+  gap: 56px;
 }
 
 /* Main */
@@ -350,7 +451,6 @@ ol {
 
 .btn-filter {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   height: 48px;
   background-color: var(--accent-color, #f4f4fd);
