@@ -466,10 +466,6 @@ ol {
   color: var(--accent-color, #f4f4fd);
 }
 
-.footer-social {
-  /* margin-right: 80px; */
-}
-
 .footer-social > .section-text {
   color: var(--main-hero-color, #ffffff);
   margin-bottom: 16px;
@@ -609,9 +605,6 @@ ol {
   background-color: var(--active-color, #404bbf);
   fill: var(--main-hero-color, #ffffff);
   border-color: transparent;
-}
-
-.form {
 }
 
 .form-title {

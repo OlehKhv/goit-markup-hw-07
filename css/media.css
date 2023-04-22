@@ -20,6 +20,9 @@
   .subscribe > .section-text {
     text-align: center;
   }
+  .close-btn {
+    margin-right: 8px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -53,7 +56,6 @@
   .contacts-link:is(:hover, :focus) {
     color: var(--active-color, #404bbf);
   }
-
   .nav-link.current {
     color: var(--active-color, #404bbf);
   }
@@ -128,7 +130,6 @@
   .footer > .container {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: var(--mob-gap, 72px) var(--main-gap, 24px);
   }
   .footer-text {
     max-width: 264px;
@@ -170,8 +171,14 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
   .footer > .container {
     padding: 0 108px;
+    gap: var(--mob-gap, 72px) var(--main-gap, 24px);
   }
 }
 
@@ -251,12 +258,10 @@
   .footer-social {
     margin-right: 80px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .contacts-link {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+  .subscribe input {
+    border-color: var(--main-bg-color, #ffffff);
+  }
+  .subscribe input::placeholder {
+    color: var(--main-bg-color, #ffffff);
   }
 }
