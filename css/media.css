@@ -231,6 +231,9 @@
   .examples-list {
     gap: 72px 24px;
   }
+  .examples-list-item > .link:is(:hover, :focus) > .card-text {
+    border: none;
+  }
 }
 
 @media screen and (max-width: 1157px) {
@@ -404,5 +407,11 @@
   }
   .examples-list {
     gap: calc(2 * var(--main-gap, 24px)) var(--main-gap, 24px);
+  }
+  .examples-list-item .card-text {
+    border: 1px solid var(--border-color, #e7e9fc);
+  }
+  .examples-list-item > .link:is(:hover, :focus) > .card-text {
+    border-color: var(--accent-color, #f4f4fd);
   }
 }

@@ -517,8 +517,12 @@ ol {
   transform: scale(1.05);
 }
 
+.examples-list-item > .link {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .examples-list-item .card-text {
-  border: 1px solid var(--border-color, #e7e9fc);
+  border: 1px solid var(--accent-color, #f4f4fd);
   border-top: none;
 }
 
