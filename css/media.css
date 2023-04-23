@@ -2,6 +2,9 @@
   .container {
     width: 428px;
   }
+  .mob-menu .social-list {
+    gap: 56px;
+  }
   .modal {
     width: 392px;
   }

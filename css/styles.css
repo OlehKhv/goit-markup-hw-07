@@ -224,7 +224,7 @@ ol {
 }
 
 .menu-nav {
-  margin-bottom: var(--mob-gap, 72px);
+  margin-bottom: 40px;
 }
 
 .nav-list {
@@ -275,7 +275,7 @@ ol {
 }
 
 .mob-menu .social-list {
-  gap: 56px;
+  gap: 14%;
 }
 
 /* Main */
