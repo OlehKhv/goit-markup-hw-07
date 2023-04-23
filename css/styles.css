@@ -287,8 +287,8 @@ ol {
 .hero {
   height: 432px;
   max-width: 428px;
-  padding-top: 112px;
-  padding-bottom: 112px;
+  /* padding-top: 112px;
+  padding-bottom: 112px; */
   margin: 0 auto;
 
   background-color: var(--main-color, #2e2f42);
@@ -325,9 +325,8 @@ ol {
 }
 
 .hero-container {
-  padding-right: 54px;
-  padding-left: 54px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero-title {

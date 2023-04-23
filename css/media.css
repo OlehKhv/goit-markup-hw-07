@@ -16,6 +16,10 @@
     margin-bottom: 0;
   }
 
+  .hero-container {
+    max-width: 352px;
+  }
+
   .hero-title {
     text-transform: capitalize;
   }
@@ -147,8 +151,7 @@
   }
 
   .hero-container {
-    padding-right: 136px;
-    padding-left: 136px;
+    width: 528px;
   }
 
   .hero-title {
@@ -333,8 +336,7 @@
   }
 
   .hero-container {
-    padding-right: 472px;
-    padding-left: 472px;
+    width: 526px;
   }
 
   .hero-title {
