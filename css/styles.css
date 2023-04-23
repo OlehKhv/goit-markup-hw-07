@@ -275,7 +275,7 @@ ol {
 }
 
 .mob-menu .social-list {
-  gap: 14%;
+  gap: 12%;
 }
 
 /* Main */
@@ -293,10 +293,32 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile/mob-bg.jpg);
+    url(../images/mob-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-2x/mob-bg-2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-3x/mob-bg-3x.jpg);
+  }
 }
 
 .hero-container {
@@ -439,28 +461,27 @@ ol {
 /* Portfolio*/
 
 .portfolio.section {
-  padding-top: 96px;
+  padding-top: 48px;
 }
 
 .btn-list {
   display: flex;
-  margin-bottom: 72px;
-  gap: var(--main-gap, 24px);
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px var(--main-gap, 24px);
+
+  margin-bottom: 48px;
 }
 
 .btn-filter {
-  display: flex;
-  align-items: center;
-  height: 48px;
+  height: 40px;
   background-color: var(--accent-color, #f4f4fd);
-  color: var(--logo-color, #4d5ae5);
-  padding: 0 24px;
+  padding: 8px 32px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: var(--logo-color, #4d5ae5);
 
   border: 1px solid var(--border-color, #e7e9fc);
   border-radius: 4px;
@@ -544,7 +565,6 @@ ol {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: var(--mob-gap, 72px);
 }
 

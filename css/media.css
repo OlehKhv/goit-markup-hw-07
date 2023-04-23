@@ -24,6 +24,10 @@
     text-align: center;
   }
 
+  .footer > .container {
+    align-items: center;
+  }
+
   .footer-text {
     align-items: center;
   }
@@ -38,6 +42,12 @@
 
   .close-btn {
     margin-right: 8px;
+  }
+
+  /* Portfolio*/
+
+  .portfolio.section {
+    padding-bottom: 48px;
   }
 }
 
@@ -108,7 +118,29 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/tab-bg.jpg);
+      url(../images/tab-bg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img-2x/tab-bg-2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img-3x/tab-bg-3x.jpg);
+    }
   }
 
   .hero-container {
@@ -164,9 +196,6 @@
     max-width: 264px;
   }
 
-  .subscribe {
-  }
-
   .subscribe-field {
     flex-direction: row;
     flex-wrap: wrap;
@@ -180,6 +209,17 @@
   .modal {
     width: 408px;
     padding: 24px;
+  }
+
+  /* Portfolio*/
+
+  .portfolio.section {
+    padding-top: 64px;
+  }
+  .btn-list {
+    justify-content: center;
+
+    margin-bottom: 64px;
   }
 }
 
@@ -254,7 +294,29 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-img.jpg);
+      url(../images/desktop-bg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img-2x/desktop-bg-2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img-3x/desktop-bg-3x.jpg);
+    }
   }
 
   .hero-container {
@@ -320,5 +382,14 @@
 
   .subscribe input::placeholder {
     color: var(--main-bg-color, #ffffff);
+  }
+
+  /* Portfolio*/
+
+  .portfolio.section {
+    padding-top: 100px;
+  }
+  .btn-list {
+    margin-bottom: 72px;
   }
 }
