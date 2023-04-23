@@ -668,6 +668,7 @@ ol {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim-time);
 
+  width: calc(100% - 32px);
   min-height: 576px;
   background-color: #fcfcfc;
   padding: 24px 16px;
