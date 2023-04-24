@@ -196,8 +196,9 @@ ol {
   position: fixed;
   z-index: 3;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 24px 24px 40px 40px;
   background-color: var(--main-bg-color, #ffffff);
   display: -webkit-box;
